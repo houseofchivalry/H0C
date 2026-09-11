@@ -1,95 +1,44 @@
 <!doctype html>
-<html lang="pl">
+<html lang="de">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Wydarzenia H0C | H0C</title>
-<link rel="stylesheet" href="events.css">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wydarzenia H0C | H0C</title><link rel="stylesheet" href="events.css">
 </head>
 <body data-lang="de">
 <header class="site-header">
-  <a class="brand" href="index.html" aria-label="H0C — strona główna">
-    <span class="brand-mark">H0C</span><span class="brand-name">HOUSE OF CHIVALRY</span>
-  </a>
+  <a class="brand" href="index.html" aria-label="H0C — strona główna"><span class="brand-mark"><b>H0C</b></span><span class="brand-name">HOUSE OF CHIVALRY</span></a>
   <nav class="site-nav" id="site-nav" aria-label="Główna nawigacja"></nav>
   <div class="flags" aria-label="Języki"></div>
   <button id="menu-toggle" class="menu-toggle" aria-expanded="false" aria-controls="site-nav">MENU ☰</button>
 </header>
-
-<section class="hero">
-  <div class="hero-inner">
-    <p class="eyebrow">H0C · HOUSE OF CHIVALRY</p>
-    <h1></h1>
-    <p></p>
-  </div>
-</section>
-
+<section class="hero"><div class="hero-inner"><h1></h1><p></p></div></section>
 <main>
   <div class="layout">
     <div class="main-left">
     <section class="card calendar-card">
       <div class="card-inner">
-        <div class="title-row">
-          <span class="orn">⌁ ◇ ⌁</span>
-          <h2 data-text="calendar"></h2>
-          <span class="orn">⌁ ◇ ⌁</span>
-        </div>
-
+        <div class="title-row"><span class="orn">⌁ ◇ ⌁</span><h2 data-text="calendar"></h2><span class="orn">⌁ ◇ ⌁</span></div>
         <div class="toolbar">
-          <div class="controls">
-            <button class="square" aria-label="Poprzedni tydzień">‹</button>
-            <button class="square" aria-label="Następny tydzień">›</button>
-            <div class="range"><span class="range-icon">▣</span><span id="range"></span><span>⌄</span></div>
-            <button class="today" data-text="today"></button>
-          </div>
-          <div class="legend">
-            <span><i class="dot game"></i><b data-text="game"></b></span>
-            <span><i class="dot hoc"></i><b data-text="hoc"></b></span>
-            <span><i class="dot alliance"></i><b data-text="alliance"></b></span>
-            <span><i class="dot other"></i><b data-text="other"></b></span>
-          </div>
+          <div class="controls"><button class="square" aria-label="Poprzedni tydzień">‹</button><button class="square" aria-label="Następny tydzień">›</button><div class="range"><span>▣</span><span id="range"></span><span>⌄</span></div><button class="today" data-text="today"></button></div>
+          <div class="legend"><span><i class="dot game"></i><b data-text="game"></b></span><span><i class="dot hoc"></i><b data-text="hoc"></b></span><span><i class="dot alliance"></i><b data-text="alliance"></b></span><span><i class="dot other"></i><b data-text="other"></b></span></div>
         </div>
-
-        <div class="week"></div>
-        <div class="timeline"></div>
-
-        <section class="upcoming">
-          <div class="section-title"><span>⌁ ◇ ⌁</span><h3 data-text="upcoming"></h3><span>⌁ ◇ ⌁</span></div>
-          <div class="up-grid"></div>
-        </section>
+        <div class="week"></div><div class="timeline"></div>
       </div>
     </section>
+    <section class="upcoming"><div class="section-title"><span>⌁ ◇ ⌁</span><h3 data-text="upcoming"></h3><span>⌁ ◇ ⌁</span></div><div class="up-grid"></div></section>
     <section class="info-strip info-grid"></section>
     </div>
-
     <aside class="sidebar">
-      <section class="card daily-card">
-        <div class="card-inner">
-          <div class="title-row daily-title">
-            <span class="daily-flag" aria-hidden="true"></span>
-            <h2 data-text="daily"></h2>
-          </div>
-          <div class="daily-date"></div>
-          <div class="daily-list"></div>
-          <div class="mini-title">⌁ <span data-text="calendar"></span> ⌁</div>
-          <div class="daily-week"></div>
-          <img class="mini-image" src="hoc-winterfell.png" alt="Winterfell">
-        </div>
+      <section class="card daily-card"><div class="card-inner">
+        <div class="title-row daily-title"><span class="daily-flag" aria-hidden="true"></span><h2 data-text="daily"></h2></div>
+        <div class="daily-week"></div><div class="daily-list"></div>
+        <img class="mini-image" src="hoc-winterfell-final.png" alt="Winterfell">
         <a class="side-button" href="#" data-text="full"></a>
-      </section>
-
-      <section class="how">
-        <div class="how-orn">⌁ ◇ ⌁</div>
-        <h4 data-text="how"></h4>
-        <p data-text="howText"></p>
-        <a href="#">DOWIEDZ SIĘ WIĘCEJ <b>›</b></a>
-      </section>
+      </div></section>
+      <section class="how"><div class="how-orn">⌁ ◇ ⌁</div><h4 data-text="how"></h4><p data-text="howText"></p><a href="#">DOWIEDZ SIĘ WIĘCEJ <b>›</b></a></section>
     </aside>
   </div>
-
 </main>
-
 <footer class="footer">H0C · HOUSE OF CHIVALRY · HONOR IN ACTION · UNITY IN PURPOSE</footer>
 <script src="events.js"></script>
-</body>
-</html>
+</body></html>

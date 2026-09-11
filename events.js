@@ -6,7 +6,7 @@ ru:{code:'ru',home:'О H0C',rules:'ПРАВИЛА',ranks:'РАНГИ',events:'С
 const E=[
 {id:'amber',s:0,e:5,kind:'red',icon:'amber',name:{pl:'Święto Bursztynowej Jesieni',en:'Amber Autumn Feast',de:'Bernstein-Herbstfest',ru:'Праздник янтарной осени'},time:null},
 {id:'return',s:0,e:5,kind:'game',icon:'return',name:{pl:'Powrót do Westeros',en:'Return to Westeros',de:'Rückkehr nach Westeros',ru:'Возвращение в Вестерос'},time:null},
-{id:'army',s:0,e:0,kind:'army',icon:'army',name:{pl:'Zbieranie armii',en:'Army Gathering',de:'Armee sammeln',ru:'Сбор армии'},time:null},
+{id:'army',s:0,e:5,kind:'army',icon:'army',name:{pl:'Zbieranie armii',en:'Army Gathering',de:'Armee sammeln',ru:'Сбор армии'},time:null},
 {id:'trade',s:0,e:4,kind:'trade',icon:'trade',name:{pl:'Dzień handlowy',en:'Trade Day',de:'Handelstag',ru:'Торговый день'},time:'10:00'},
 {id:'mobil',s:0,e:4,kind:'mobil',icon:'mobil',name:{pl:'Mobilizacja Przymierza',en:'Alliance Mobilization',de:'Bündnismobilisierung',ru:'Мобилизация альянса'},time:'20:00'},
 {id:'fireworks',s:2,e:3,kind:'fire',icon:'fireworks',name:{pl:'Spadające fajerwerki',en:'Falling Fireworks',de:'Fallende Feuerwerke',ru:'Падающие фейерверки'},time:'18:00'},
@@ -62,14 +62,13 @@ function render(){
  document.querySelectorAll('[data-text]').forEach(x=>x.textContent=t[x.dataset.text]);
  document.querySelector('#range').textContent=t.range;
  document.querySelector('.week').innerHTML=t.days.map((d,i)=>`<button class="day ${i===0?'selected':''}" data-day="${i}">${d}</button>`).join('');
- document.querySelector('.daily-date').innerHTML=`${flag(l)}<span>${t.days[0]}</span>`;
- document.querySelector('.daily-week').innerHTML=t.mini.map((d,i)=>`<div class="mini-day ${i===0?'selected':''}">${d}<strong>${t.dates[i]}</strong></div>`).join('');
+ document.querySelector('.daily-week').innerHTML=t.mini.map((d,i)=>`<div class="mini-day ${i===0?'selected':''}"><span>${d}</span><strong>${t.dates[i]}</strong></div>`).join('');
  const tl=document.querySelector('.timeline');
  tl.innerHTML=E.map((e,i)=>{const left=e.s/6*100,width=(e.e-e.s+1)/6*100;return `<div class="event ${e.kind}" style="top:${i*31+6}px;left:${left}%;width:calc(${width}% - 8px)"><span class="icon">${icon(e)}</span><span class="name">${txt(e,l)}</span><span class="time">${e.time||t.allDay}</span></div>`}).join('');
  tl.style.height=`${E.length*31+12}px`;
  document.querySelector('.daily-list').innerHTML=E.map(e=>`<div class="daily-item ${e.kind}"><span class="icon">${icon(e)}</span><strong>${txt(e,l)}</strong><small>${e.time||t.allDay}</small></div>`).join('');
  const up=['amber','fireworks','winter','night'];
- document.querySelector('.up-grid').innerHTML=up.map(id=>{const e=E.find(x=>x.id===id);return `<article class="up-item"><span class="icon">${icon(e)}</span><div><h4>${txt(e,l)}</h4><strong>${e.time||t.allDay}</strong><p>${t.dates[e.s]} – ${t.dates[e.e]}</p></div></article>`}).join('');
+ document.querySelector('.up-grid').innerHTML=up.map(id=>{const e=E.find(x=>x.id===id);const date=e.id==='amber'?`${t.dates[e.s]} – ${t.dates[e.e]}`:t.dates[e.s];return `<article class="up-item"><span class="icon">${icon(e)}</span><div><h4>${txt(e,l)}</h4><strong>${e.time||t.allDay}</strong><p>${date}</p></div></article>`}).join('');
  document.querySelector('.info-grid').innerHTML=t.info.map((x,i)=>{const k=['cooperation','activity','strategy','glory'][i];return `<article class="info"><span class="info-icon">${svgIcon(k)}</span><div><h4>${x[0]}</h4><p>${x[1]}</p></div></article>`}).join('');
 }
 function wire(){
