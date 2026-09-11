@@ -41,10 +41,6 @@ function svgIcon(key){
 }
 const icon=e=>svgIcon(e.icon);
 const txt=(e,l)=>e.name[l];
-function nav(t,l){
- const homeFile=l==='pl'?'index.html':l+'.html';
- return `<a href="${homeFile}">${t.home}</a><a href="${homeFile}#rules">${t.rules}</a><a href="${homeFile}#ranks">${t.ranks}</a><a href="events${l==='pl'?'':'-'+l}.html" class="active">${t.events}</a><a href="${homeFile}#rules">${t.principles}</a><a href="${homeFile}#team">${t.team}</a><a href="materialy.html">${t.materials}</a>`
-}
 function flag(code){
  const f={pl:['#fff','#dc143c'],de:['#000','#dd0000','#ffce00'],ru:['#fff','#0039a6','#d52b1e']};
  if(code==='en')return `<svg class="flag" viewBox="0 0 60 40"><rect width="60" height="40" fill="#012169"/><path d="M0 0L60 40M60 0L0 40" stroke="#fff" stroke-width="9"/><path d="M0 0L60 40M60 0L0 40" stroke="#c8102e" stroke-width="5"/><path d="M30 0V40M0 20H60" stroke="#fff" stroke-width="15"/><path d="M30 0V40M0 20H60" stroke="#c8102e" stroke-width="9"/></svg>`;
@@ -55,7 +51,6 @@ function render(){
  document.documentElement.lang=l;
  document.querySelector('.brand').href=l==='pl'?'index.html':l+'.html';
  document.title=`${t.events} H0C | H0C`;
- document.querySelector('.site-nav').innerHTML=nav(t,l);
  document.querySelector('.flags').innerHTML=['pl','en','de','ru'].map(c=>`<a href="events${c==='pl'?'':'-'+c}.html" aria-label="${c}">${flag(c)}</a>`).join('');
  document.querySelector('.hero h1').textContent=t.hero;
  document.querySelector('.hero p:last-child').textContent=t.heroText;
@@ -82,8 +77,9 @@ function wire(){
    }
    if(e.target.closest('.today'))document.querySelector('.day').click();
    const m=e.target.closest('#menu-toggle');
-   if(m){
-     const open=document.querySelector('.site-nav').classList.toggle('open');
+   const navEl=document.querySelector('.site-nav');
+   if(m && navEl){
+     const open=navEl.classList.toggle('open');
      m.setAttribute('aria-expanded',String(open));
    }
  });
