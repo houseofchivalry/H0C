@@ -65,8 +65,8 @@ function render(){
  document.querySelector('.daily-date').innerHTML=`${flag(l)}<span>${t.days[0]}</span>`;
  document.querySelector('.daily-week').innerHTML=t.mini.map((d,i)=>`<div class="mini-day ${i===0?'selected':''}">${d}<strong>${t.dates[i]}</strong></div>`).join('');
  const tl=document.querySelector('.timeline');
- tl.innerHTML=E.map((e,i)=>{const left=e.s/6*100,width=(e.e-e.s+1)/6*100;return `<div class="event ${e.kind}" style="top:${i*42+8}px;left:${left}%;width:calc(${width}% - 8px)"><span class="icon">${icon(e)}</span><span class="name">${txt(e,l)}</span><span class="time">${e.time||t.allDay}</span></div>`}).join('');
- tl.style.height=`${E.length*42+16}px`;
+ tl.innerHTML=E.map((e,i)=>{const left=e.s/6*100,width=(e.e-e.s+1)/6*100;return `<div class="event ${e.kind}" style="top:${i*31+6}px;left:${left}%;width:calc(${width}% - 8px)"><span class="icon">${icon(e)}</span><span class="name">${txt(e,l)}</span><span class="time">${e.time||t.allDay}</span></div>`}).join('');
+ tl.style.height=`${E.length*31+12}px`;
  document.querySelector('.daily-list').innerHTML=E.map(e=>`<div class="daily-item ${e.kind}"><span class="icon">${icon(e)}</span><strong>${txt(e,l)}</strong><small>${e.time||t.allDay}</small></div>`).join('');
  const up=['amber','fireworks','winter','night'];
  document.querySelector('.up-grid').innerHTML=up.map(id=>{const e=E.find(x=>x.id===id);return `<article class="up-item"><span class="icon">${icon(e)}</span><div><h4>${txt(e,l)}</h4><strong>${e.time||t.allDay}</strong><p>${t.dates[e.s]} – ${t.dates[e.e]}</p></div></article>`}).join('');
