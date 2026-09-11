@@ -43,7 +43,7 @@ const icon=e=>svgIcon(e.icon);
 const txt=(e,l)=>e.name[l];
 function nav(t,l){
  const homeFile=l==='pl'?'index.html':l+'.html';
- return `<a href="${homeFile}">${t.home}</a><a href="${homeFile}#rules">${t.rules}</a><a href="${homeFile}#ranks">${t.ranks}</a><a href="events${l==='pl'?'':'-'+l}.html" class="active">${t.events}</a><a href="${homeFile}#principles">${t.principles}</a><a href="${homeFile}#team">${t.team}</a><a href="${homeFile}#materials">${t.materials}</a>`
+ return `<a href="${homeFile}">${t.home}</a><a href="${homeFile}#rules">${t.rules}</a><a href="${homeFile}#ranks">${t.ranks}</a><a href="events${l==='pl'?'':'-'+l}.html" class="active">${t.events}</a><a href="${homeFile}#rules">${t.principles}</a><a href="${homeFile}#team">${t.team}</a><a href="materialy.html">${t.materials}</a>`
 }
 function flag(code){
  const f={pl:['#fff','#dc143c'],de:['#000','#dd0000','#ffce00'],ru:['#fff','#0039a6','#d52b1e']};
