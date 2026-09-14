@@ -1,51 +1,20 @@
-<!doctype html>
-<html lang="pl">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="House of Chivalry. Poznaj H0C, nasze wartości, wydarzenia i materiały dla członków.">
-<title>H0C | House of Chivalry</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
-<link rel="stylesheet" href="extra.css">
-
-
-<style>
-:root{--gold:#d7a63a;--gold2:#f1cf78;--ink:#071016;--ink2:#0d1a20;--paper:#eee4c9;--paper2:#e2d2ad;--cream:#f8f0dc;--line:rgba(215,166,58,.7)}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--ink);color:#f6f0df;font-family:"Source Serif 4",Georgia,serif}.site-header{position:relative;z-index:10;display:flex;align-items:center;gap:28px;padding:14px 4vw;border-bottom:1px solid var(--line);background:rgba(3,9,12,.96)}.brand{display:flex;align-items:center;gap:12px;color:#fff;text-decoration:none;white-space:nowrap}.brand-mark{display:grid;place-items:center;width:43px;height:43px;border:1px solid var(--gold);color:var(--gold2);font-family:Cinzel,serif;font-size:15px}.brand-name{font:600 16px Cinzel,serif;letter-spacing:.04em}.site-nav{display:flex;align-items:center;justify-content:center;gap:25px;flex:1}.site-nav a{color:#f4ead1;text-decoration:none;text-transform:uppercase;font:600 12px Cinzel,serif;letter-spacing:.04em}.site-nav a:hover{color:var(--gold2)}.language-switcher{display:flex;gap:9px}.language-switcher a{text-decoration:none;font-size:18px}.menu-toggle{display:none}.hero{background-image:url("home-hero-art.png");background-size:cover;background-position:center;position:relative;min-height:650px;display:grid;place-items:center;text-align:center;overflow:hidden;border-bottom:1px solid var(--line);}.hero:before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 50% 100%,transparent 20%,rgba(0,0,0,.55) 85%);pointer-events:none}.hero-content{position:relative;z-index:2;max-width:850px;padding:80px 24px}.hero .eyebrow{color:var(--gold2);font:600 13px Cinzel,serif;letter-spacing:.42em;text-transform:uppercase}.hero h1{margin:18px 0 8px;font:600 clamp(52px,8vw,108px)/.9 Cinzel,serif;text-transform:uppercase;letter-spacing:.02em}.hero h1 em{color:var(--gold2);font-style:normal}.hero-subtitle{margin:28px auto 10px;font:400 clamp(18px,2.2vw,28px)/1.35 Cinzel,serif;letter-spacing:.12em;text-transform:uppercase}.hero-rule{width:150px;height:1px;margin:24px auto;background:var(--gold)}.hero-lead{max-width:610px;margin:0 auto 28px;font-size:18px;color:#eadfc8}.button{display:inline-block;padding:15px 28px;background:linear-gradient(#eec660,#c99127);border:1px solid #f5d77f;color:#111;text-decoration:none;font:700 13px Cinzel,serif;letter-spacing:.08em;text-transform:uppercase;box-shadow:0 8px 30px rgba(0,0,0,.35)}.button:hover{filter:brightness(1.08)}.values{display:grid;grid-template-columns:repeat(4,1fr);background:linear-gradient(#0a171d,#071117);border-bottom:1px solid var(--line)}.value{position:relative;padding:42px 28px 45px;text-align:center}.value+.value:before{content:"";position:absolute;left:0;top:25%;height:50%;width:1px;background:linear-gradient(transparent,var(--line),transparent)}.value-icon{display:block;color:var(--gold2);font-size:38px;margin-bottom:12px}.value h2{margin:0 0 10px;color:var(--gold2);font:600 19px Cinzel,serif;text-transform:uppercase;letter-spacing:.04em}.value p{max-width:240px;margin:auto;color:#ddd2bb;font-size:16px;line-height:1.45}.paper{background:var(--paper);color:#15130f;padding:76px 5vw}.quote{max-width:900px;margin:0 auto 58px;text-align:center;font:italic 600 clamp(25px,3.4vw,42px)/1.25 "Source Serif 4",Georgia,serif}.quote:after{content:"";display:block;width:170px;height:1px;margin:25px auto 0;background:#a87520}.home-links{max-width:1250px;margin:auto;display:grid;grid-template-columns:repeat(5,1fr);gap:12px}.home-card{min-height:340px;display:flex;flex-direction:column;justify-content:flex-end;padding:22px;background-image:linear-gradient(180deg,rgba(7,15,20,.10),rgba(7,15,20,.92)),url("card-about.jpg");background-size:cover;background-position:center;border:1px solid #b48835;box-shadow:inset 0 0 0 1px rgba(255,255,255,.05)}.home-card:nth-child(2){background-image:linear-gradient(180deg,rgba(7,15,20,.12),rgba(7,15,20,.92)),url("card-rules.jpg");background-size:cover;background-position:center}.home-card:nth-child(3){background-image:linear-gradient(180deg,rgba(7,15,20,.12),rgba(7,15,20,.92)),url("card-events.jpg");background-size:cover;background-position:center}.home-card:nth-child(4){background-image:linear-gradient(180deg,rgba(7,15,20,.12),rgba(7,15,20,.92)),url("card-materials.jpg");background-size:cover;background-position:center}.home-card:nth-child(5){background-image:linear-gradient(180deg,rgba(7,15,20,.12),rgba(7,15,20,.92)),url("card-contact.jpg");background-size:cover;background-position:center}.home-card .card-icon{color:var(--gold2);font-size:32px;margin-bottom:auto}.home-card h3{margin:0 0 10px;color:#f4dfac;font:600 23px Cinzel,serif;text-transform:uppercase}.home-card p{margin:0 0 18px;color:#eadfc8;font-size:16px;line-height:1.4}.card-link{align-self:flex-start;color:#17130b;background:var(--gold2);padding:11px 13px;text-decoration:none;font:700 10px Cinzel,serif;letter-spacing:.04em;text-transform:uppercase}.finale{min-height:410px;display:grid;place-items:center;text-align:center;padding:80px 24px;background-image:linear-gradient(rgba(3,10,14,.68),rgba(3,10,14,.88)),url("finale-bg.jpg");background-size:cover;background-position:center}.finale h2{margin:0;color:#f1d17f;font:600 clamp(30px,4vw,52px)/1.25 Cinzel,serif;text-transform:uppercase;letter-spacing:.06em}.finale .motto{margin-top:28px;color:#eee1c7;font:600 13px Cinzel,serif;letter-spacing:.3em;text-transform:uppercase}.finale .hero-rule{margin-bottom:0}footer{display:flex;justify-content:space-between;gap:20px;padding:18px 4vw;border-top:1px solid var(--line);background:#050b0e;color:#cfc2a8;font:13px Cinzel,serif}footer a{color:var(--gold2)}@media(max-width:1000px){.site-header{gap:14px}.site-nav{gap:13px}.site-nav a{font-size:10px}.home-links{grid-template-columns:repeat(2,1fr)}.values{grid-template-columns:repeat(2,1fr)}.value:nth-child(3):before{display:none}}@media(max-width:700px){.site-header{flex-wrap:wrap}.site-nav{order:3;width:100%;justify-content:flex-start;overflow:auto;padding:8px 0}.site-nav a{white-space:nowrap}.language-switcher{margin-left:auto}.hero{min-height:570px}.hero h1{font-size:48px}.values,.home-links{grid-template-columns:1fr}.value+.value:before{display:none}.home-card{min-height:250px}.paper{padding:58px 20px}footer{flex-direction:column}.brand-name{font-size:13px}}
-</style>
-</head>
-<body>
-<a class="skip-link" href="#main">Przejdź do treści</a>
-<header class="site-header">
-<a class="brand" href="index.html" aria-label="H0C, strona główna"><span class="brand-mark">H0C</span><span class="brand-name">House of Chivalry</span></a>
-<button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">Menu <span aria-hidden="true">☰</span></button>
-<nav id="site-nav" class="site-nav" aria-label="Główna nawigacja">
-<a href="#about">O H0C</a><a href="rules.html">Regulamin</a><a href="events.html">Wydarzenia</a><a href="materialy.html">Materiały</a><a href="contact.html">Kontakt</a>
-</nav>
-<div class="language-switcher" aria-label="Wybór języka"><a href="index.html" lang="pl" aria-label="Polski">🇵🇱</a><a href="en.html" lang="en" aria-label="English">🇬🇧</a><a href="de.html" lang="de" aria-label="Deutsch">🇩🇪</a><a href="ru.html" lang="ru" aria-label="Русский">🇷🇺</a></div>
+<!doctype html><html lang="pl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="House of Chivalry - H0C"><title>H0C | House of Chivalry</title><link rel="stylesheet" href="home.css"></head><body>
+<header class="site-header visual-header" aria-label="H0C House of Chivalry">
+  <nav class="visual-nav" aria-label="Główna nawigacja">
+    <a style="left:29.2%;width:7.2%" href="#about">O H0C</a>
+    <a style="left:36.3%;width:10.4%" href="rules.html">Regulamin</a>
+    <a style="left:46.6%;width:11.2%" href="events.html">Wydarzenia</a>
+    <a style="left:57.9%;width:10.8%" href="materialy.html">Materiały</a>
+    <a style="left:68.6%;width:7.4%" href="contact.html">Kontakt</a>
+    <div class="visual-brand-link"><a href="#start" aria-label="H0C House of Chivalry"></a></div>
+    <div class="visual-flags"><a href="index.html" aria-label="Polski"></a><a href="en.html" aria-label="English"></a><a href="de.html" aria-label="Deutsch"></a><a href="ru.html" aria-label="Русский"></a></div>
+  </nav>
 </header>
-<main id="main">
-<section class="hero" id="start"><div class="hero-content"><p class="eyebrow">Siła · Lojalność · Zwycięstwo</p><h1>House of<br><em>Chivalry</em></h1><p class="hero-subtitle">Więcej niż sojusz. To drużyna.</p><div class="hero-rule"></div><p class="hero-lead">Miejsce dla graczy, którzy chcą działać razem, rozwijać się i tworzyć coś więcej niż zwykły sojusz.</p><a class="button" href="contact.html">Dołącz do nas</a></div></section>
-<section class="values" id="about">
-<article class="value"><span class="value-icon">♟</span><h2>Aktywna społeczność</h2><p>Gracze, którzy wspierają się na każdym etapie gry.</p></article>
-<article class="value"><span class="value-icon">♜</span><h2>Wspólne cele</h2><p>Działamy razem, aby osiągać więcej.</p></article>
-<article class="value"><span class="value-icon">♛</span><h2>Rozwój</h2><p>Dzielimy się wiedzą, strategią i doświadczeniem.</p></article>
-<article class="value"><span class="value-icon">⚔</span><h2>Niezapomniane wydarzenia</h2><p>Razem tworzymy wielkie historie.</p></article>
-</section>
-<section class="paper"><p class="quote">„Pojedynczy gracz może wygrać bitwę, ale to drużyna zdobywa królestwa.”</p>
-<div class="home-links">
-<article class="home-card"><span class="card-icon">✦</span><h3>O H0C</h3><p>Poznaj nasz sojusz, nasze wartości i to, co nas wyróżnia.</p><a class="card-link" href="#about">Dowiedz się więcej →</a></article>
-<article class="home-card"><span class="card-icon">▤</span><h3>Regulamin</h3><p>Rangi, obowiązki i zasady, które budują naszą siłę.</p><a class="card-link" href="rules.html">Przejdź do regulaminu →</a></article>
-<article class="home-card"><span class="card-icon">◫</span><h3>Wydarzenia</h3><p>Kalendarz wydarzeń sojuszu i gry. Bądź na bieżąco.</p><a class="card-link" href="events.html">Sprawdź wydarzenia →</a></article>
-<article class="home-card"><span class="card-icon">▣</span><h3>Materiały</h3><p>Instrukcje, poradniki i przydatne pliki w jednym miejscu.</p><a class="card-link" href="materialy.html">Przeglądaj materiały →</a></article>
-<article class="home-card"><span class="card-icon">✉</span><h3>Kontakt</h3><p>Masz pytania? Skontaktuj się z nami. Jesteśmy tutaj, aby pomóc.</p><a class="card-link" href="contact.html">Skontaktuj się →</a></article>
-</div></section>
-<section class="finale"><div><h2>Jedna drużyna.<br>Wspólny cel.<br>Wielkie możliwości.</h2><div class="hero-rule"></div><p class="motto">Honor · Współpraca · Zwycięstwo</p></div></section>
+<main>
+<section id="start" class="visual-section hero-visual" aria-label="House of Chivalry"><div class="sr-only"><h1>House of Chivalry</h1><p>Więcej niż sojusz. To drużyna.</p><p>Miejsce dla graczy, którzy chcą działać razem, rozwijać się i tworzyć coś więcej niż zwykły sojusz.</p></div><a class="visual-hero-button" href="contact.html" aria-label="Dołącz do nas"></a></section>
+<section id="about" class="visual-section values-visual" aria-label="Nasze wartości"><div class="sr-only"><h2>Aktywna społeczność</h2><h2>Wspólne cele</h2><h2>Rozwój</h2><h2>Niezapomniane wydarzenia</h2></div></section>
+<section class="visual-section cards-visual" aria-label="Najważniejsze strony"><div class="sr-only"><h2>O H0C</h2><h2>Regulamin</h2><h2>Wydarzenia</h2><h2>Materiały</h2><h2>Kontakt</h2></div><div class="visual-card-links"><a href="#about" aria-label="O H0C"></a><a href="rules.html" aria-label="Regulamin"></a><a href="events.html" aria-label="Wydarzenia"></a><a href="materialy.html" aria-label="Materiały"></a><a href="contact.html" aria-label="Kontakt"></a></div></section>
+<section class="visual-section finale-visual" aria-label="Jedna drużyna. Wspólny cel. Wielkie możliwości."><div class="sr-only"><h2>Jedna drużyna. Wspólny cel. Wielkie możliwości.</h2></div></section>
 </main>
-<footer><span>H0C · House of Chivalry</span><span>Siła sojuszu rodzi się ze współpracy.</span><a href="#start" aria-label="Wróć na górę">↑</a></footer>
-<script src="script.js"></script>
-</body>
-</html>
+<footer class="visual-footer"><div class="sr-only">H0C House of Chivalry. Siła sojuszu rodzi się ze współpracy.</div></footer>
+</body></html>
