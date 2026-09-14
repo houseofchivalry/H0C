@@ -30,17 +30,16 @@ body{margin:0;background:#02090e;container-type:inline-size;color:#f7f0df;font-f
 
 /* Localized home pages: same artwork and proportions as the approved reference, with translated HTML copy. */
 .localized-page{width:100%;margin:0 auto}
-.localized-page .hero.localized{aspect-ratio:1024/447;height:auto;background:#071018 url('hero-localized-clean.png') center/100% 100% no-repeat;display:grid;place-items:center;text-align:center;position:relative;overflow:hidden}
+.localized-page .hero.localized{aspect-ratio:1024/447;height:auto;background:#071018 url('hero-localized-clean.png') center/100% 100% no-repeat;position:relative;overflow:hidden}
 .localized-page .hero.localized:before{content:none}
-.localized-page .hero-content{position:relative;z-index:1;width:63cqw;max-width:82%;padding-top:0}
-.localized-page .eyebrow{font:600 1.3671875cqw Cinzel,serif;letter-spacing:.34em;color:#f1d88d;margin:0 0 1.85546875cqw}
-.localized-page h1{font:500 6.5cqw/.9 Cinzel,serif;letter-spacing:.03em;margin:0;color:#f4e4b7;text-shadow:0 4px 18px #000}
-.localized-page h1 em{font-style:normal;color:#e7b94d}
-.localized-page .hero-subtitle{font:500 2.1484375cqw/1.22 Cinzel,serif;letter-spacing:.12em;text-transform:uppercase;margin:2.05078125cqw 0 1.46484375cqw}
-.hero-rule{width:12.59765625cqw;height:1px;background:var(--gold);margin:0 auto 17px;position:relative}.hero-rule:after{content:'◆';position:absolute;left:50%;top:50%;transform:translate(-50%,-55%);color:var(--gold);font-size:1.3671875cqw;background:transparent}
-.localized-page .hero-lead{max-width:58.7890625cqw;margin:0 auto 1.85546875cqw;font-size:1.7578125cqw;line-height:1.4;color:#eee4d0}
-.button{display:inline-block;background:linear-gradient(#f3c55d,#dca83d);color:#17120a;text-decoration:none;padding:1.26953125cqw 2.9296875cqw;font:600 1.66015625cqw Cinzel,serif;letter-spacing:.05em;border:1px solid #f7d67c;box-shadow:0 5px 20px rgba(0,0,0,.28)}.button:hover{filter:brightness(1.06)}
-
+.localized-page .hero-content{position:absolute;inset:0;z-index:2;text-align:center;pointer-events:none}
+.localized-page .eyebrow{position:absolute;left:0;right:0;top:14.1%;font:600 1.3671875cqw/1 Cinzel,serif;letter-spacing:.34em;color:#f1d88d;margin:0}
+.localized-page .hero-title-sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.localized-page h1{margin:0}
+.localized-page .hero-subtitle{position:absolute;left:0;right:0;top:53.2%;font:500 2.1484375cqw/1.22 Cinzel,serif;letter-spacing:.12em;text-transform:uppercase;margin:0;color:#f4eadb;text-shadow:0 2px 8px #000}
+.hero-rule{position:absolute;left:50%;top:69.6%;width:12.59765625cqw;height:1px;background:var(--gold);margin:0;transform:translateX(-50%)}
+.hero-rule:after{content:'◆';position:absolute;left:50%;top:50%;transform:translate(-50%,-55%);color:var(--gold);font-size:1.3671875cqw;background:transparent}
+.localized-page .button{position:absolute;left:37.5%;top:78%;width:25%;height:10%;display:flex;align-items:center;justify-content:center;pointer-events:auto;padding:0;font:600 1.66015625cqw/1 Cinzel,serif;letter-spacing:.05em}
 .localized-page .values{aspect-ratio:1024/189;height:auto;background:#07141b url('values-localized-clean.png') center/100% 100% no-repeat;display:grid;grid-template-columns:repeat(4,1fr);padding:0 3.515625cqw;gap:0}
 .localized-page .value{position:relative;text-align:center;border-right:0;display:block;overflow:hidden}.localized-page .value:last-child{border-right:0}
 .localized-page .value h2{position:absolute;left:4%;right:4%;top:42%;font:600 1.66cqw/1.12 Cinzel,serif;text-transform:uppercase;letter-spacing:.03em;color:#f0d184;margin:0}.localized-page .value p{position:absolute;left:4%;right:4%;top:65%;font-size:1.26953125cqw;line-height:1.22;margin:0 auto;color:#f4ecdd}
