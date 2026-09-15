@@ -17,12 +17,13 @@ body{margin:0;background:#02090e;container-type:inline-size;color:#f7f0df;font-f
 
 .visual-section{width:100%;margin:0 auto;position:relative;background-repeat:no-repeat;background-position:center top;background-size:100% 100%}
 
-/* One shared ornate gold frame for the hero and the parchment/card panel. */
+/* V19: frame overlays are cropped from the approved visual reference so the site uses the same ornamental geometry. */
 .ornate-frame{border:0;box-shadow:none;position:relative}
-.ornate-frame:before{content:'';position:absolute;inset:0;z-index:20;background:url('ornate-frame.svg') center/100% 100% no-repeat;pointer-events:none}
+.localized-page .hero.ornate-frame:before{content:'';position:absolute;inset:0;z-index:20;background:url('frame-hero-reference.png') center/100% 100% no-repeat;pointer-events:none}
+.localized-page .cards-visual.ornate-frame:before,.localized-page .paper.ornate-frame:before{content:'';position:absolute;inset:0;z-index:20;background:url('frame-panel-reference.png') center/100% 100% no-repeat;pointer-events:none}
 .localized-page .hero.localized.ornate-frame{overflow:visible}
 .localized-page .button{border:0;background:#e5b448;box-shadow:0 4px 14px rgba(0,0,0,.5);position:absolute}
-.localized-page .button:before{content:'';position:absolute;inset:0;z-index:1;background:url('button-ornate-frame.svg') center/100% 100% no-repeat;pointer-events:none}
+.localized-page .button:before{content:'';position:absolute;inset:0;z-index:1;background:url('frame-button-reference.svg') center/100% 100% no-repeat;pointer-events:none}
 .localized-page .button{padding:0}
 .localized-page .button:hover{filter:brightness(1.08)}
 
