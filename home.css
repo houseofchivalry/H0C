@@ -12,15 +12,16 @@ body{margin:0;background:#02090e;container-type:inline-size;color:#f7f0df;font-f
 .site-nav{position:absolute;left:29.98046875cqw;right:27.24609375cqw;top:0;height:100%;display:flex;align-items:center;justify-content:center;min-width:0}
 .site-nav a{color:#f3e9d3;text-decoration:none;font:500 1.26953125cqw Cinzel,serif;letter-spacing:.025em;padding:0 1.26953125cqw;white-space:nowrap;border-right:1px solid rgba(217,169,64,.5)}
 .site-nav a:last-child{border-right:0}.site-nav a:hover,.site-nav a.active{color:var(--gold2)}
-.flags{position:absolute;right:2.9296875cqw;top:0;width:13.18359375cqw;height:100%;display:flex;align-items:center;justify-content:flex-end;gap:10px;z-index:3}
-.flags a{display:block;width:37px;height:25px}.flags svg{width:37px;height:25px;display:block}
+.flags{position:absolute;right:2.9296875cqw;top:0;width:13.18359375cqw;height:100%;display:flex;align-items:center;justify-content:flex-end;gap:.9765625cqw;z-index:3}
+.flags a{display:block;width:3.61328125cqw;height:2.44140625cqw}.flags svg{width:3.61328125cqw;height:2.44140625cqw;display:block}
 
 .visual-section{width:100%;margin:0 auto;position:relative;background-repeat:no-repeat;background-position:center top;background-size:100% 100%}
 
 /* One shared ornate gold frame for the hero and the parchment/card panel. */
-.ornate-frame{border:3px solid #e5b448;box-shadow:inset 0 0 0 1px #f3d276,inset 0 0 0 5px rgba(6,16,23,.72),0 0 0 1px rgba(240,199,94,.55);position:relative}
-.ornate-frame:before,.ornate-frame:after{content:'◆';position:absolute;left:50%;z-index:8;transform:translateX(-50%);font:500 22px/1 Cinzel,serif;color:var(--gold2);text-shadow:0 1px 5px #000;pointer-events:none}
-.ornate-frame:before{top:-14px}.ornate-frame:after{bottom:-14px}
+.ornate-frame{border:.29296875cqw solid #e5b448;box-shadow:inset 0 0 0 .09765625cqw #f3d276,inset 0 0 0 .48828125cqw rgba(6,16,23,.72),0 0 0 .09765625cqw rgba(240,199,94,.55);position:relative}
+.ornate-frame:before,.ornate-frame:after{content:'◆';position:absolute;left:50%;z-index:8;transform:translateX(-50%);font:500 2.1484375cqw/1 Cinzel,serif;color:var(--gold2);text-shadow:0 1px 5px #000;pointer-events:none}
+.ornate-frame:before{top:-1.07421875cqw}.ornate-frame:after{bottom:-1.07421875cqw}
+.localized-page .hero.localized.ornate-frame{overflow:visible}
 
 .values-visual{aspect-ratio:1024/189;height:auto;background-image:url('values-visual.png')}
 .cards-visual{aspect-ratio:1024/497;height:auto;background-image:url('cards-visual.png');overflow:visible}
