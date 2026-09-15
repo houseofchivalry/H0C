@@ -1,1 +1,42 @@
-*{box-sizing:border-box}html,body{margin:0;background:#02090e}body{min-height:100vh;font-family:"Source Serif 4",Georgia,serif}.contact-page{position:relative;width:100%;min-height:100vh;background-position:top center;background-size:100% auto;background-repeat:no-repeat;aspect-ratio:724/543;overflow:hidden}.contact-nav{position:absolute;z-index:3;left:0;top:0;width:100%;height:11%;display:flex;align-items:center;padding:0 7%;gap:3%}.brand-link{width:31%;height:100%;display:block;flex:none}.nav-link{height:100%;display:block;text-decoration:none;position:relative}.nav-about{width:8%}.nav-rules{width:9%}.nav-events{width:11%}.nav-materials{width:11%}.nav-contact{width:10%}.flags{margin-left:auto;display:flex;width:18%;height:100%;gap:4%}.flag-link{flex:1;height:100%;display:block}.semantic{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}.focusable:focus{outline:2px solid #f1cf78;outline-offset:-2px}.contact-hotspot{position:absolute;z-index:3;text-decoration:none}.server-hotspot{left:30%;top:42%;width:40%;height:14%}.recruit-hotspot{left:12%;top:57%;width:36%;height:23%}.other-hotspot{left:50%;top:57%;width:36%;height:23%}@media(max-width:700px){.contact-page{background-size:auto 100%;background-position:center top}.contact-nav{padding:0 5%;gap:1.5%}.brand-link{width:29%}.nav-about{width:9%}.nav-rules{width:9%}.nav-events{width:11%}.nav-materials{width:12%}.nav-contact{width:11%}.flags{width:17%}.server-hotspot{left:28%;width:44%}.recruit-hotspot{left:10%;width:39%}.other-hotspot{left:51%;width:39%}}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; background: #000; }
+body { min-height: 100vh; }
+.contact-page {
+  width: 100%;
+  max-width: 724px;
+  margin: 0 auto;
+  position: relative;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+}
+.contact-page > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.hotspot {
+  position: absolute;
+  display: block;
+  z-index: 2;
+  border: 0;
+  background: transparent;
+}
+.hotspot:focus-visible {
+  outline: 2px solid #e5bb55;
+  outline-offset: 2px;
+}
+.logo { left: 6.2%; top: 1.8%; width: 6.0%; height: 6.0%; }
+.nav-about { left: 33.0%; top: 0; width: 7.0%; height: 8.5%; }
+.nav-rules { left: 40.0%; top: 0; width: 9.5%; height: 8.5%; }
+.nav-events { left: 49.5%; top: 0; width: 11.0%; height: 8.5%; }
+.nav-materials { left: 60.5%; top: 0; width: 10.0%; height: 8.5%; }
+.nav-contact { left: 70.5%; top: 0; width: 8.5%; height: 8.5%; }
+.flag-pl { left: 80.9%; top: 1.4%; width: 4.2%; height: 5.4%; }
+.flag-en { left: 85.2%; top: 1.4%; width: 4.2%; height: 5.4%; }
+.flag-de { left: 89.6%; top: 1.4%; width: 4.2%; height: 5.4%; }
+.flag-ru { left: 94.0%; top: 1.4%; width: 4.2%; height: 5.4%; }
+
+@media (max-width: 724px) {
+  .contact-page { width: 100%; }
+}
