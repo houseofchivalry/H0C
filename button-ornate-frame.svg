@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 40" preserveAspectRatio="none">
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="1.2" y="1.2" width="97.6" height="37.6" rx="1.2" stroke="#8b5d18" stroke-width="1.8"/>
+    <rect x="2.6" y="2.6" width="94.8" height="34.8" rx="0.7" stroke="#f3d276" stroke-width="0.95"/>
+    <rect x="4.4" y="4.4" width="91.2" height="31.2" rx="0.4" stroke="#9b6c1c" stroke-width="0.55"/>
+    <path d="M2.8 10V5.8Q2.8 2.8 5.8 2.8H11" stroke="#f0c75e" stroke-width="1.15"/>
+    <path d="M97.2 10V5.8Q97.2 2.8 94.2 2.8H89" stroke="#f0c75e" stroke-width="1.15"/>
+    <path d="M2.8 30V34.2Q2.8 37.2 5.8 37.2H11" stroke="#f0c75e" stroke-width="1.15"/>
+    <path d="M97.2 30V34.2Q97.2 37.2 94.2 37.2H89" stroke="#f0c75e" stroke-width="1.15"/>
+    <path d="M4.0 7.0L7.0 4.0L10.0 7.0L7.0 10.0Z" stroke="#8b5d18" stroke-width="0.7"/>
+    <path d="M96.0 7.0L93.0 4.0L90.0 7.0L93.0 10.0Z" stroke="#8b5d18" stroke-width="0.7"/>
+    <path d="M4.0 33.0L7.0 36.0L10.0 33.0L7.0 30.0Z" stroke="#8b5d18" stroke-width="0.7"/>
+    <path d="M96.0 33.0L93.0 36.0L90.0 33.0L93.0 30.0Z" stroke="#8b5d18" stroke-width="0.7"/>
+  </g>
+</svg>
